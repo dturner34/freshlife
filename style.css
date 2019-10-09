@@ -1,0 +1,242 @@
+body {
+	font-family:"SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+	text-shadow: 1px 2px 3px rgba(0.5,0.5,0.5,0.1);
+	margin: 0;
+}
+
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure, form, fieldset, input, legend, pre, abbr, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.nav {
+	backdrop-filter:saturate(1.8) blur(20px);
+	background-attachment:scroll;
+	background-clip:border-box;
+	background-color:rgba(0, 0, 0, 0.8);
+	background-image:none;
+	background-origin:padding-box;
+	background-position-x:0%;
+	background-position-y:0%;
+	background-repeat-x:;
+	background-repeat-y:;
+	background-size:auto;
+	box-sizing:content-box;
+	color:rgb(51, 51, 51);
+	direction:ltr;
+	display:block;
+	font-size:17px;
+	height:64px;
+	left:0px;
+	line-height:25px;
+	max-height:64px;
+	min-width:320px;
+	pointer-events:auto;
+	position:fixed;
+	quotes:"“" "”";
+	right:0px;
+	text-align:left;
+	text-size-adjust:100%;
+	top:0px;
+	unicode-bidi:isolate;
+	user-select:none;
+	z-index:9999;
+	-webkit-font-smoothing:antialiased;
+	-webkit-locale:"en-US";
+}
+
+.nav-content {
+	margin: 0 auto;
+    max-width: 980px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-list {
+	list-style-type: none;
+    margin: 0 -10px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav-link {
+	font-size: 14px;
+    line-height: 4.6;
+    /* font-weight: 400; */
+    letter-spacing: -.01em;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 10px;
+    opacity: 1;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-tap-highlight-color: transparent;
+    outline-offset: -7px;
+}
+
+.nav-link:hover
+{
+  opacity:.6;
+  transition: opacity .2s ease-out;
+  -moz-transition: opacity .2s ease-out;
+  -webkit-transition: opacity .2s ease-out;
+  -o-transition: opacity .2s ease-out;
+}
+
+.logo {
+	height: 48px;
+    margin-top: 8px;
+}
+
+.footer {
+	font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: normal;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    min-width: 320px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .copyright {
+    margin: 5px 0;
+	color: #86868b;
+}
+
+.footer .links {
+	position: relative;
+    top: -5px;
+    z-index: 1;
+    margin-top: 5px;
+}
+
+
+.footer .link {
+	border-right: 1px solid #d2d2d7;
+    margin-right: 7px;
+    padding-right: 10px;
+    display: inline-block;
+    margin-top: 5px;
+    white-space: nowrap;
+	color: #515154;
+}
+
+.footer .link:last-child {
+	border: 0;
+}
+
+
+.page {
+	height: 36pc;
+	width: 100%;
+	position: relative;
+}
+
+.page a {
+	color: #0070c9;
+}
+
+.page.dark {
+	background-color: black;
+}
+
+.page.dark .headline,
+.page.dark .subhead{
+	color: white;
+}
+
+.page.dark a {
+	color: #6bf;
+}
+
+.page .content {
+	padding-top: 67px;
+	z-index: 1;
+    position: relative;
+}
+
+.page .headline {
+	font-size: 44px;
+    line-height: 1.09091;
+    font-weight: 600;
+    letter-spacing: -.002em;
+	
+}
+
+.page .subhead {
+	max-width: 37pc;
+    margin: 0 auto;
+	margin-top: 5px;
+	font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 400;
+    letter-spacing: .009em;
+}
+
+.page .price {
+	margin-top: 0.4em;
+    color: #888;
+}
+
+
+.page .links {
+	margin-top: .47em;
+	display: inline-block;
+    font-size: 21px;
+    line-height: 1.38105;
+    font-weight: 400;
+    letter-spacing: .011em;
+}
+
+.page .links a {
+	margin: 0 10px;
+}
+
+
+.page.first {
+	margin-top: 60px;
+}
+
+.page .main-image {
+	height: 22pc;
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#bidet-warm .main-image {
+	height: 22pc;
+}
+
+#bidet-cold .main-image {
+	height: 16pc;
+}
+
